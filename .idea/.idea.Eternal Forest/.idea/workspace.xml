@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c0a55e9-a214-4384-bb51-dd9e277fc765" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.godot/editor/GameSolo.tscn-editstate-7342474fa64599a275871da88d8a026c.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/GameSolo.tscn-editstate-7342474fa64599a275871da88d8a026c.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/GameSolo.tscn-folding-7342474fa64599a275871da88d8a026c.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/GameSolo.tscn-folding-7342474fa64599a275871da88d8a026c.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/Orc1.tscn-editstate-d857108e1594075175274fc51cab57c4.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/Orc1.tscn-editstate-d857108e1594075175274fc51cab57c4.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/Orc1.tscn-folding-d857108e1594075175274fc51cab57c4.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/Orc1.tscn-folding-d857108e1594075175274fc51cab57c4.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/Player.tscn-editstate-48b487cb3fbab0e0d627d8f8de2ba1d9.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/Player.tscn-editstate-48b487cb3fbab0e0d627d8f8de2ba1d9.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/Player.tscn-folding-48b487cb3fbab0e0d627d8f8de2ba1d9.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/Player.tscn-folding-48b487cb3fbab0e0d627d8f8de2ba1d9.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2138ba4767b07f21f5de407b42dc4973.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2138ba4767b07f21f5de407b42dc4973.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2138ba4767b07f21f5de407b42dc4973.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2138ba4767b07f21f5de407b42dc4973.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Animation Marche JD (2).png-73d12cd1518b378e055ba57da1dbd854.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Animation Marche JD (2).png-73d12cd1518b378e055ba57da1dbd854.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Inventaire.png-586a49557b929b7885a37635dce41c8d.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Inventaire.png-586a49557b929b7885a37635dce41c8d.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Rocks, Cliffs.png-749a67c43cb180586ce0cdd62075c882.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Rocks, Cliffs.png-749a67c43cb180586ce0cdd62075c882.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Rocks, Grasslands.png-35e1448f9906696fd178fa40f127f8cc.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Rocks, Grasslands.png-35e1448f9906696fd178fa40f127f8cc.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Screen_main_menu.png-887bccf02808e0ab37fe3922a48a3bbf.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Screen_main_menu.png-887bccf02808e0ab37fe3922a48a3bbf.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/SlotInv.png-351329fe54c8e14d8f51cddeb04abe45.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/SlotInv.png-351329fe54c8e14d8f51cddeb04abe45.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Title.png-5d19de31a8c2afadf73726c806487981.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Title.png-5d19de31a8c2afadf73726c806487981.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/Waterfall.png-fd19235be0ee842f7ed5a81712132577.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/Waterfall.png-fd19235be0ee842f7ed5a81712132577.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/cliff_autumn.png-526367b771a848785b74bbe8636de7bd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/cliff_autumn.png-526367b771a848785b74bbe8636de7bd.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/cliff_spring.png-d8b99e0a9ee833043bea01dc725ea015.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/cliff_spring.png-d8b99e0a9ee833043bea01dc725ea015.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/cliff_summer.png-88c2d4bb0080f7033936896a9e1fc71a.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/cliff_summer.png-88c2d4bb0080f7033936896a9e1fc71a.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/cliff_winter.png-4140ad787fa4c0dccf5857e9541750eb.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/cliff_winter.png-4140ad787fa4c0dccf5857e9541750eb.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/cliff_winter_ice.png-ed8a0cd366fd97a39c2a5f5858014d74.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/cliff_winter_ice.png-ed8a0cd366fd97a39c2a5f5858014d74.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/flowers.png-97d71f396907d83a4faca3a429d51398.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/flowers.png-97d71f396907d83a4faca3a429d51398.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/forest.png-978d0b44c2e367fc6f436a96e1bae5e0.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/forest.png-978d0b44c2e367fc6f436a96e1bae5e0.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/ice-shallows.png-fd0d52e1a9a2c270456f3e9b748744a9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/ice-shallows.png-fd0d52e1a9a2c270456f3e9b748744a9.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/mushrooms.png-80d4ba2f19e707932872b2cb5ddca204.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/mushrooms.png-80d4ba2f19e707932872b2cb5ddca204.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc1_death_full.png-006b29ca7552ea5713f8711d60f6cfc9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc1_death_full.png-006b29ca7552ea5713f8711d60f6cfc9.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc1_hurt_full.png-dbf2ae662fdc8cccd75664faaf4f997d.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc1_hurt_full.png-dbf2ae662fdc8cccd75664faaf4f997d.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc1_walk_attack_front _full.png-104bddc7ef4482b9355dc42872f3d08e.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc1_walk_attack_front _full.png-104bddc7ef4482b9355dc42872f3d08e.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc1_walk_full.png-b72f7721f4daee7e49f488b10216fae3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc1_walk_full.png-b72f7721f4daee7e49f488b10216fae3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc2_death_full.png-cfe28fdeeb0ce4c2fa9c289ec3c1b2ae.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc2_death_full.png-cfe28fdeeb0ce4c2fa9c289ec3c1b2ae.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc2_hurt_full.png-9a4f3f54cecaaff07011b00cb9a53753.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc2_hurt_full.png-9a4f3f54cecaaff07011b00cb9a53753.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc2_walk_attack_full.png-2d70286dc85a2954a3265cf25d8e30d8.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc2_walk_attack_full.png-2d70286dc85a2954a3265cf25d8e30d8.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc2_walk_full.png-19bea873dc9bdba6e31dc0b280024c80.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc2_walk_full.png-19bea873dc9bdba6e31dc0b280024c80.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc3_death_full.png-35841b3e4fd65a6193abd987d5394ccb.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc3_death_full.png-35841b3e4fd65a6193abd987d5394ccb.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc3_hurt_full.png-e8e9fbc664dc98daad0778b04a218ae4.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc3_hurt_full.png-e8e9fbc664dc98daad0778b04a218ae4.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc3_walk_attack_full.png-0f808632e5d234ffb3ba46e7cf4628b7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc3_walk_attack_full.png-0f808632e5d234ffb3ba46e7cf4628b7.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/orc3_walk_full.png-726ff88730fc431abeca2678477e76c0.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/orc3_walk_full.png-726ff88730fc431abeca2678477e76c0.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/plants_autumn.png-7243536d5f525a6d75096b0a135d09bd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/plants_autumn.png-7243536d5f525a6d75096b0a135d09bd.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/plants_spring.png-3d64df945970379ef5d8260afba96441.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/plants_spring.png-3d64df945970379ef5d8260afba96441.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/plants_summer.png-02de6d11f49be169649198e66e604d9b.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/plants_summer.png-02de6d11f49be169649198e66e604d9b.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/plants_winter.png-eb24117e5c49ff5d78a3cab91af908ba.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/plants_winter.png-eb24117e5c49ff5d78a3cab91af908ba.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/terrain_autumn.png-9c16751d08e53de0a96c09afc26cf484.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/terrain_autumn.png-9c16751d08e53de0a96c09afc26cf484.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/terrain_spring.png-cd111f76e6ace1f623834aa271da00c7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/terrain_spring.png-cd111f76e6ace1f623834aa271da00c7.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/terrain_summer.png-deacb54f528de7ca7c7009ef7600a72f.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/terrain_summer.png-deacb54f528de7ca7c7009ef7600a72f.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/terrain_winter.png-e3decb2c967bb97068a5a8bb302015b3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/terrain_winter.png-e3decb2c967bb97068a5a8bb302015b3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/terrain_winter_ice.png-d95906112d620ebaf5740033f193414d.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/terrain_winter_ice.png-d95906112d620ebaf5740033f193414d.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/tilled_soil.png-4be4a50bd306320cbc9ebe4d054b2408.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/tilled_soil.png-4be4a50bd306320cbc9ebe4d054b2408.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/trees_autumn.png-e0565fd20b7484544ea7e2ca4f405478.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/trees_autumn.png-e0565fd20b7484544ea7e2ca4f405478.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/trees_spring.png-b10c16b32058f51c682aefe0d80ab8f9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/trees_spring.png-b10c16b32058f51c682aefe0d80ab8f9.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/trees_summer.png-7e1520d971ec51a401cbf711ae700df3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/trees_summer.png-7e1520d971ec51a401cbf711ae700df3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/trees_winter.png-0a892e8572fdcc06e2dc083e4398210a.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/trees_winter.png-0a892e8572fdcc06e2dc083e4398210a.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/wildflowers_autumn.png-88a4f764c60288afb3f850c7fcdd978a.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/wildflowers_autumn.png-88a4f764c60288afb3f850c7fcdd978a.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/wildflowers_spring.png-3921fbd7c120cc9c7c95e7c190a2eb03.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/wildflowers_spring.png-3921fbd7c120cc9c7c95e7c190a2eb03.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/wildflowers_summer.png-dc06d2f07415fe163d9e95ed7fcdfeaa.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/wildflowers_summer.png-dc06d2f07415fe163d9e95ed7fcdfeaa.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/imported/wildflowers_winter.png-414a430e13a2a9616d6ef62181367c82.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/wildflowers_winter.png-414a430e13a2a9616d6ef62181367c82.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/metadata/ide_messaging_meta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Eternal Forest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Eternal Forest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Eternal Forest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Eternal Forest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Eternal Forest.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Eternal Forest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Eternal Forest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Eternal Forest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Eternal Forest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Eternal Forest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Eternal Forest.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Eternal Forest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eternal Forest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inven/Inventaire.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Inven/Inventaire.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inven/InventoryGui.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inven/InventoryGui.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inven/SlotInv.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Inven/SlotInv.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inven/inventory_gui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Inven/inventory_gui.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inven/panel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Inven/panel.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Default_Forest/Rocks, Grasslands.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Default_Forest/Rocks, Grasslands.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Default_Forest/mushrooms.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Default_Forest/mushrooms.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Default_Forest/plants_summer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Default_Forest/plants_summer.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Default_Forest/terrain_spring.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Default_Forest/terrain_spring.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Default_Forest/trees_summer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Default_Forest/trees_summer.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/Rocks, Cliffs.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/Rocks, Cliffs.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/Waterfall.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/Waterfall.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/cliff_autumn.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/cliff_autumn.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/cliff_spring.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/cliff_spring.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/cliff_summer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/cliff_summer.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/cliff_winter.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/cliff_winter.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/cliff_winter_ice.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/cliff_winter_ice.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/flowers.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/flowers.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/forest.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/forest.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/ice-shallows.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/ice-shallows.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/plants_autumn.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/plants_autumn.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/plants_spring.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/plants_spring.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/plants_winter.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/plants_winter.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/terrain_autumn.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/terrain_autumn.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/terrain_summer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/terrain_summer.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/terrain_winter.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/terrain_winter.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/terrain_winter_ice.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/terrain_winter_ice.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/tilled_soil.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/tilled_soil.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/trees_autumn.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/trees_autumn.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/trees_spring.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/trees_spring.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/trees_winter.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/trees_winter.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/wildflowers_autumn.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/wildflowers_autumn.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/wildflowers_spring.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/wildflowers_spring.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/wildflowers_summer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/wildflowers_summer.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map/Terrain/wildflowers_winter.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Terrain/wildflowers_winter.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/Orc1/Orc1.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/Orc1/Orc1.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_death_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_death_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_hurt_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_hurt_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_walk_attack_front _full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_walk_attack_front _full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_walk_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc1_walk_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_death_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_death_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_hurt_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_hurt_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_walk_attack_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_walk_attack_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_walk_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc2_walk_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_death_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_death_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_hurt_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_hurt_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_walk_attack_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_walk_attack_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_walk_full.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Mobs/craftpix-net-323779-free-top-down-orc-game-character-pixel-art/PNG/orc3_walk_full.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Animation Marche JD (2).png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Animation Marche JD (2).png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Player/player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/HebergeMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI/HebergeMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/MultiplayerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI/MultiplayerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/Screen_main_menu.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/UI/Screen_main_menu.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/SingleplayerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI/SingleplayerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/Title.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/UI/Title.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/main_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/UI/main_menu.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/GameSolo.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/GameSolo.tscn" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Inven/InventoryGui.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2rjKWhoU54bC1EuAtqLGqnzbz7N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Executable.Player.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected=".NET Executable.Player">
+    <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
+      <option name="address" value="127.0.0.1" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="/private/var/folders/m4/yrr518nd5x348n193kbn5_b00000gn/T/AppTranslocation/02B0272F-950E-4A1C-B93E-1787DD45D032/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Player" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="/private/var/folders/m4/yrr518nd5x348n193kbn5_b00000gn/T/AppTranslocation/02B0272F-950E-4A1C-B93E-1787DD45D032/d/Godot_mono.app/Contents/MacOS/Godot" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c0a55e9-a214-4384-bb51-dd9e277fc765" name="Changes" comment="" />
+      <created>1737067078595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737067078595</updated>
+      <workItem from="1737067081129" duration="854000" />
+      <workItem from="1737111420994" duration="33000" />
+      <workItem from="1737141971236" duration="42000" />
+      <workItem from="1737311044176" duration="629000" />
+      <workItem from="1740581335843" duration="2932000" />
+      <workItem from="1740592998809" duration="2000" />
+      <workItem from="1740693007576" duration="18700000" />
+      <workItem from="1740771439615" duration="5312000" />
+      <workItem from="1740782033340" duration="7377000" />
+      <workItem from="1740841375464" duration="662000" />
+      <workItem from="1740862212381" duration="865000" />
+      <workItem from="1740867591755" duration="13738000" />
+      <workItem from="1740881396646" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

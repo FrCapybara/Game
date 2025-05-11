@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://fqxkf0g1cowx"]
+
+[ext_resource type="Texture2D" uid="uid://dg8xe4yw45aj4" path="res://Health/coeurMinecraft.png" id="1_roxbn"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_5u2fv"]
+script/source = "using Godot;
+using System;
+
+public partial class HBoxContainer : Godot.HBoxContainer
+{
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+	}
+}
+"
+
+[node name="HealthBar" type="CanvasLayer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1165.0
+offset_top = -165.0
+grow_horizontal = 0
+grow_vertical = 0
+script = SubResource("CSharpScript_5u2fv")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_roxbn")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_roxbn")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_roxbn")
+expand_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_roxbn")
+expand_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_roxbn")
+expand_mode = 2

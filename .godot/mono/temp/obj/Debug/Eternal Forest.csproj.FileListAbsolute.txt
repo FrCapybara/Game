@@ -1,0 +1,36 @@
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/Eternal Forest.deps.json
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/Eternal Forest.runtimeconfig.json
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/Eternal Forest.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/Eternal Forest.pdb
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.csproj.AssemblyReference.cache
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfoInputs.cache
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.AssemblyInfo.cs
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.csproj.CoreCompileInputs.cache
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/refint/Eternal Forest.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.pdb
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.genruntimeconfig.cache
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/ref/Eternal Forest.dll
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal Forest.sourcelink.json
+/Users/andrei/Desktop/Jeu/.godot/mono/temp/obj/Debug/Eternal .4F69688B.Up2Date
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\Eternal Forest.deps.json
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\Eternal Forest.runtimeconfig.json
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\Eternal Forest.dll
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\Eternal Forest.pdb
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.csproj.AssemblyReference.cache
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.AssemblyInfoInputs.cache
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.AssemblyInfo.cs
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.csproj.CoreCompileInputs.cache
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.sourcelink.json
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal .4F69688B.Up2Date
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.dll
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\refint\Eternal Forest.dll
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.pdb
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\Eternal Forest.genruntimeconfig.cache
+C:\Users\julie\Eternal Forest\Jeu\.godot\mono\temp\obj\Debug\ref\Eternal Forest.dll

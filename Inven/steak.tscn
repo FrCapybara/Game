@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://fk67ru87aqkl"]
+
+[ext_resource type="Texture2D" uid="uid://bs4sibss8iy1v" path="res://Inven/steak.png" id="1_ncc31"]
+
+[node name="Steak" type="Sprite2D"]
+position = Vector2(170.5, 324.75)
+scale = Vector2(0.0942708, 0.0976852)
+texture = ExtResource("1_ncc31")

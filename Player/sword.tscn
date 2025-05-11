@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cftvbl6mvvxe"]
+
+[ext_resource type="Texture2D" uid="uid://bngm7ypx4w8fx" path="res://Inven/New Piskel.png" id="1_g4k25"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3238"]
+size = Vector2(67.625, 62.125)
+
+[node name="Sword" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23.1875, -20.9375)
+shape = SubResource("RectangleShape2D_v3238")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(25, -27)
+scale = Vector2(2.19531, 2.17188)
+texture = ExtResource("1_g4k25")

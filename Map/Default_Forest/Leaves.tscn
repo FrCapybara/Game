@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbhs87g3a2wh"]
+
+[ext_resource type="Texture2D" uid="uid://cvteroim5vh4t" path="res://Map/Default_Forest/plants_summer.png" id="1_tr4et"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_226ke"]
+radius = 21.006
+
+[node name="Leaves" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tr4et")
+region_enabled = true
+region_rect = Rect2(99, 77, 55, 51)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_226ke")

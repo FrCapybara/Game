@@ -1,0 +1,6 @@
+AnimationPlayer
+Node2D
+CharacterBody2D
+CollisionShape2D
+Area2D
+AnimatedSprite2D

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjxkxcxl5mghf"]
+
+[ext_resource type="Texture2D" uid="uid://boekfpo0uqd3i" path="res://Inven/SlotInv.png" id="1_by7js"]
+
+[node name="Panel" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+custom_minimum_size = Vector2(34, 34)
+offset_right = 34.0
+offset_bottom = 34.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 17)
+scale = Vector2(2, 2)
+texture = ExtResource("1_by7js")
+region_enabled = true
+region_rect = Rect2(105, 7, 17, 16)

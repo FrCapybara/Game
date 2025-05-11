@@ -1,0 +1,137 @@
+[gd_scene load_steps=9 format=3 uid="uid://cfndj7ycscspj"]
+
+[ext_resource type="Texture2D" uid="uid://f42m31e3ir3b" path="res://UI/Screen_main_menu.png" id="1_2ngdj"]
+[ext_resource type="Script" path="res://UI/MultiplayerMenu.cs" id="1_sig1h"]
+[ext_resource type="Texture2D" uid="uid://dr8t6m63vgvjc" path="res://UI/Title.png" id="2_3yqei"]
+
+[sub_resource type="Theme" id="Theme_mjve2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jekuc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xonhv"]
+bg_color = Color(0.43134, 0.43134, 0.43134, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_color = Color(0.207638, 0.215696, 0.238091, 1)
+shadow_size = 5
+shadow_offset = Vector2(2, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1bh"]
+bg_color = Color(0.212305, 0.212305, 0.212305, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_color = Color(0.207638, 0.215696, 0.238091, 1)
+shadow_size = 5
+shadow_offset = Vector2(2, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eemyr"]
+bg_color = Color(0.501961, 0.501961, 0.501961, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+shadow_color = Color(0.207638, 0.215696, 0.238091, 1)
+shadow_size = 5
+shadow_offset = Vector2(2, 3.41)
+
+[node name="MultiplayerMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sig1h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2ngdj")
+stretch_mode = 4
+
+[node name="Title" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -510.0
+offset_top = -676.0
+offset_right = 512.0
+offset_bottom = -70.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3yqei")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -218.0
+offset_top = 15.0
+offset_right = 218.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Héberger" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_mjve2")
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jekuc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xonhv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jk1bh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eemyr")
+text = "Héberger"
+
+[node name="Rejoindre" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jekuc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xonhv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jk1bh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eemyr")
+text = "Rejoindre"
+
+[node name="Retour" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jekuc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xonhv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jk1bh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eemyr")
+text = "Retour
+"
