@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julie\\Eternal Forest\\Game\\Game\\Eternal Forest.csproj": {}
+    "C:\\Users\\julie\\Eternal Forest\\Game\\Test\\Game\\Eternal Forest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julie\\Eternal Forest\\Game\\Game\\Eternal Forest.csproj": {
+    "C:\\Users\\julie\\Eternal Forest\\Game\\Test\\Game\\Eternal Forest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julie\\Eternal Forest\\Game\\Game\\Eternal Forest.csproj",
+        "projectUniqueName": "C:\\Users\\julie\\Eternal Forest\\Game\\Test\\Game\\Eternal Forest.csproj",
         "projectName": "Eternal Forest",
-        "projectPath": "C:\\Users\\julie\\Eternal Forest\\Game\\Game\\Eternal Forest.csproj",
+        "projectPath": "C:\\Users\\julie\\Eternal Forest\\Game\\Test\\Game\\Eternal Forest.csproj",
         "packagesPath": "C:\\Users\\julie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julie\\Eternal Forest\\Game\\Game\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\julie\\Eternal Forest\\Game\\Test\\Game\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julie\\AppData\\Roaming\\NuGet\\NuGet.Config"
