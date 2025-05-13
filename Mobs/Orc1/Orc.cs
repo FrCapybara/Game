@@ -11,7 +11,7 @@ public partial class Orc : CharacterBody2D
 
     private Vector2 _movementInput = Vector2.Zero;
     private string _lastDirection = "right"; // varibale pour stocker la dérniere direction ou l'ennemi regardait 
-    private player _target; // le joueur que l'orc va attaquer
+    private Player _target; // le joueur que l'orc va attaquer
     private bool _isAttacking = false; // varible pour indiquer si l'orc attaque ou pas 
     private Timer _attackCooldownTimer; // temps pour gerer le temps d'attaque
     private float _currentPatrolDistance = 0.0f; // distance de patrouille
@@ -20,12 +20,12 @@ public partial class Orc : CharacterBody2D
 
     public override void _Ready()
     {
-        _target = GetNodeOrNull<player>("/root/GameSolo/Player");// permet de trouver le Player dans la scène
+        _target = GetNodeOrNull<Player>("/root/GameSolo/Player");// permet de trouver le Player dans la scène
         
         //Timer
         _attackCooldownTimer = new Timer();
         AddChild(_attackCooldownTimer);
-        _attackCooldownTimer.WaitTime = 1.0; // Délai de 1 seconde entre les attaques
+        _attackCooldownTimer.WaitTime = 0.6; // Délai de 1 seconde entre les attaques
         _attackCooldownTimer.OneShot = true; // Le Timer ne se répète pas
         _attackCooldownTimer.Timeout += OnAttackCooldownTimeout;
     }
@@ -34,7 +34,7 @@ public partial class Orc : CharacterBody2D
     {
         if (_target == null || _isAttacking) return;
         
-        Vector2 targetPosition = _target.BodyPosition;// recuperation de la position du joueur a chque frame
+        Vector2 targetPosition = _target.GlobalPosition;// recuperation de la position du joueur a chque frame
 
         // calcul pour la distance verticale et horizontale entre le joueur et l'ennemi
         float distanceX = Mathf.Abs(targetPosition.X - GlobalPosition.X);

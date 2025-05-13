@@ -1,45 +1,95 @@
-using EternalForest.Health;
 using Godot;
+using EternalForest.Game;
 
-public partial class player : CharacterBody2D
+public partial class Player : CharacterBody2D
 {
-	[Export] public string PlayerName { get; set; }
-	[Export] private player_input _input = null; // varibale pour stocker les entrees du joueur 
-	[Export] private Character _character = null; // variable pour le personnage joueur
-	public Vector2 BodyPosition => _character.GlobalPosition;
+	[Export] private int _speed = 300;
+	[Export] private AnimatedSprite2D _sprite;
+	[Export] private Camera2D _camera; // Référence à la caméra
+	
+	
+	[Export] private string _leftAxis = "left";
+	[Export] private string _rightAxis = "right";
+	[Export] private string _upAxis = "up";
+	[Export] private string _downAxis = "down";
+
+	private Vector2 _movementInput = Vector2.Zero;
+	private string _lastDirection = "R";
+
+	public override void _EnterTree()
+	{
+		if (GetNode<GameManager>("/root/GameManager").IsNewGame)
+		{
+			
+		}
+		else
+		{
+			int id = int.Parse(GetName());
+			SetMultiplayerAuthority(id);
+		}
+		
+	}
+	
+	public override void _Ready()
+	{
+		// Si ce n'est pas le joueur local, on désactive le traitement des entrées
+		if (!IsMultiplayerAuthority())
+		{
+			SetProcess(false);
+			SetPhysicsProcess(false);
+			if (_camera != null)
+			{
+				_camera.Enabled = false; // Désactive la caméra pour les autres joueurs
+			}
+
+			return;
+		}
+		if (IsMultiplayerAuthority())
+		{
+			_camera.Enabled = true;
+			_camera.MakeCurrent(); // Fait de cette caméra la caméra active
+		}
+		
+		
+	}
+	
+	
 
 	public override void _Process(double delta)
 	{
-		_character.SetMovementInput(_input.MovementInput);
-	} 
-	
-	[Export] private int maxHealth = 10; // Santé max je le met à 10 pour l'instant
-	[Export] private HealthBar _healthBar = null; // Barre de vie
-	private int _currentHealth;
+		if (!IsMultiplayerAuthority()) return;
+		
+		_movementInput = new Vector2(
+			Input.GetAxis(_leftAxis, _rightAxis),
+			Input.GetAxis(_upAxis, _downAxis)
+		).Normalized();
 
-	public override void _Ready()
-	{
-		_currentHealth = maxHealth; // On remet la santé au max
-		_healthBar.UpdateHealthBar(_currentHealth);//On met à jour la barre de vie
-		_animation = GetNode<AnimationPlayer>("Weapon/Attack");
+		Velocity = _movementInput * _speed;
+		MoveAndSlide();
+
+		UpdateAnimation();
 	}
-	private AnimationPlayer _animation;
-	public override void _Input(InputEvent @event)
-	{
-		if (@event.IsActionPressed("space"))
-		{
-			GD.Print("Spacebar pressed!"); // Debug message
 
-			if (_animation != null)
-			{
-				_animation.Stop();
-				_animation.Play("Attack");
-				GD.Print("Playing Attack animation.");
-			}
-			else
-			{
-				GD.PrintErr("AnimationPlayer is null!");
-			}
+	private void UpdateAnimation()
+	{
+		if (_movementInput.X > 0)
+		{
+			_lastDirection = "R";
+			_sprite.Play("walk_right");
+		}
+		else if (_movementInput.X < 0)
+		{
+			_lastDirection = "L";
+			_sprite.Play("walk_left");
+		}
+		else if (_movementInput.Y != 0)
+		{
+			_sprite.Play(_lastDirection == "R" ? "walk_right" : "walk_left");
+		}
+		else
+		{
+			_sprite.Stop();
 		}
 	}
-}	
+	
+}

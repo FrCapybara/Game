@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://e7rrkpl6ejs1"]
+
+[ext_resource type="Script" path="res://Inven/Item.cs" id="1_5c0fh"]
+[ext_resource type="Texture2D" uid="uid://dl43mnpa1m8wg" path="res://Inven/SwordFer.png" id="2_vtqjb"]
+
+[node name="Item" type="Node2D"]
+z_index = 1
+script = ExtResource("1_5c0fh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -18.0
+offset_right = 51.0
+offset_bottom = 35.0
+mouse_filter = 2
+texture = ExtResource("2_vtqjb")

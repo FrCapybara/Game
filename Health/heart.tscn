@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbovs6rdlamp7"]
+
+[ext_resource type="Script" path="res://Health/HeartHealth.cs" id="1_gepxg"]
+[ext_resource type="PackedScene" uid="uid://b0w1stkbgxh5q" path="res://Health/panel.tscn" id="1_ho2o8"]
+
+[node name="Heart" type="HBoxContainer"]
+offset_right = 437.0
+offset_bottom = 101.0
+script = ExtResource("1_gepxg")
+
+[node name="Panel" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel2" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel3" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel4" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel5" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel6" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel7" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel8" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel9" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2
+
+[node name="Panel10" parent="." instance=ExtResource("1_ho2o8")]
+layout_mode = 2

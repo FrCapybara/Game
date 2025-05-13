@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=3 uid="uid://rib6yaecaunu"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_vnlwn"]
+script/source = "using Godot;
+using System;
+
+namespace EternalForest.Game
+{
+    public partial class NotificationControl : Control
+    {
+        [Signal] public delegate void NotificationHiddenEventHandler();
+
+        [Export] private StyleBoxFlat _infoStyleBox;
+        [Export] private StyleBoxFlat _saveStyleBox;
+        [Export] private StyleBoxFlat _warningStyleBox;
+        [Export] private float _animationDuration = 0.5f;
+        
+        private Panel _backgroundPanel;
+
+        public override void _Ready()
+        {
+            _backgroundPanel = GetNode<Panel>(\"Background\");
+            // Initialiser avec une opacité de 0
+            Modulate = new Color(1, 1, 1, 0);
+        }
+
+        public void SetType(string type)
+        {
+            if (_backgroundPanel == null) return;
+
+            switch (type.ToLower())
+            {
+                case \"save\":
+                    _backgroundPanel.Theme = null;
+                    _backgroundPanel.AddThemeStyleboxOverride(\"panel\", _saveStyleBox);
+                    break;
+                case \"warning\":
+                    _backgroundPanel.Theme = null;
+                    _backgroundPanel.AddThemeStyleboxOverride(\"panel\", _warningStyleBox);
+                    break;
+                default: // \"info\" ou autre
+                    _backgroundPanel.Theme = null;
+                    _backgroundPanel.AddThemeStyleboxOverride(\"panel\", _infoStyleBox);
+                    break;
+            }
+        }
+
+        public async void ShowNotification()
+        {
+            // Animation d'entrée (fondu)
+            var tween = CreateTween();
+            tween.TweenProperty(this, \"modulate\", new Color(1, 1, 1, 1), _animationDuration);
+            await ToSignal(tween, \"finished\");
+        }
+
+        public async void HideNotification()
+        {
+            // Animation de sortie (fondu)
+            var tween = CreateTween();
+            tween.TweenProperty(this, \"modulate\", new Color(1, 1, 1, 0), _animationDuration);
+            await ToSignal(tween, \"finished\");
+            
+            // Émettre un signal pour indiquer que la notification est cachée
+            EmitSignal(SignalName.NotificationHidden);
+        }
+        // Dans NotificationControl.cs, méthode ShowNotification()
+        
+    }
+}"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0v0b"]
+bg_color = Color(0.451567, 0.227162, 0.166471, 1)
+
+[node name="NotificationControl" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = SubResource("CSharpScript_vnlwn")
+_animationDuration = null
+
+[node name="Backround" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f0v0b")
+
+[node name="Message" type="Label" parent="Backround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -11.5
+offset_right = 84.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sauvegarde effectuée"

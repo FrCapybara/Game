@@ -3,24 +3,21 @@ using System;
 
 public partial class Item : Node2D
 {
-	public string Name { get; set; }
-	public Texture Icon { get; set; }
-
-	public Item()
-	{
-		// Initialisation par défaut
-	}
-
-	public Item(string name, Texture icon)
-	{
-		Name = name;
-		Icon = icon;
-	}
+	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-	}
+		var random = new RandomNumberGenerator();
+		random.Randomize();
 
-	public override void _Process(double delta)
-	{
+		// Get the TextureRect node
+		TextureRect textureRect = GetNode<TextureRect>("TextureRect");
+
+		// Load a texture based on a random condition
+		if (random.Randi() % 2 == 0)
+		{
+			textureRect.Texture = ResourceLoader.Load<Texture2D>("res://Inven/SwordFer.png");
+		}
+		
 	}
+	
 }

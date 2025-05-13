@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://df6vfd06dvulw" path="res://Player/Player.tscn" id="2_su7ta"]
 [ext_resource type="PackedScene" uid="uid://ortfjhh5vsv2" path="res://Map/Default_Forest/Map_Default_Forest.tscn" id="3_8gai8"]
 [ext_resource type="PackedScene" uid="uid://b10jxbhfr2jrg" path="res://Inven/inventory_gui.tscn" id="4_nuovr"]
-[ext_resource type="PackedScene" uid="uid://fqxkf0g1cowx" path="res://Health/health_bar.tscn" id="7_fv3ek"]
+[ext_resource type="PackedScene" uid="uid://bbovs6rdlamp7" path="res://Health/heart.tscn" id="6_aseei"]
 
 [node name="GameSolo" type="Node2D" node_paths=PackedStringArray("_mapGen", "_floorGen")]
 script = ExtResource("1_vkscu")
@@ -15,8 +15,6 @@ _floorGen = NodePath("DefaultFloor")
 [node name="DefaultFloor" parent="." instance=ExtResource("1_w4koo")]
 
 [node name="Player" parent="." instance=ExtResource("2_su7ta")]
-PlayerName = ""
-maxHealth = 10
 
 [node name="MapDefaultForest" parent="." instance=ExtResource("3_8gai8")]
 
@@ -35,4 +33,15 @@ offset_right = 555.0
 offset_bottom = 305.0
 metadata/_edit_use_anchors_ = true
 
-[node name="HealthBar" parent="CanvasLayer" instance=ExtResource("7_fv3ek")]
+[node name="Heart" parent="CanvasLayer" instance=ExtResource("6_aseei")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -479.0
+offset_top = -101.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0

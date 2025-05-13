@@ -1,0 +1,107 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1jkfkgdoasrq"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_6hxwi"]
+script/source = "using Godot;
+using System;
+using System.Collections.Generic;
+
+namespace EternalForest.Game
+{
+    public partial class NotificationSystem : CanvasLayer
+    {
+        [Export] private PackedScene _notificationScene;
+        [Export] private float _defaultDuration = 3.0f; // durée d'affichage par défaut en secondes
+        [Export] private Vector2 _notificationPosition = new Vector2(0, 0); // position à l'écran
+
+        private Queue<NotificationData> _notificationQueue = new Queue<NotificationData>();
+        private bool _isShowingNotification = false;
+
+        private struct NotificationData
+        {
+            public string Message;
+            public float Duration;
+            public string Type; // \"save\", \"info\", \"warning\", etc.
+        }
+
+        public override void _Ready()
+        {
+            // S'assurer que le CanvasLayer est au-dessus des autres éléments de jeu
+            Layer = 10;
+        }
+
+        public override void _Process(double delta)
+        {
+            // Si on n'est pas en train d'afficher une notification et qu'il y en a dans la file
+            if (!_isShowingNotification && _notificationQueue.Count > 0)
+            {
+                ShowNextNotification();
+            }
+        }
+
+        public void AddNotification(string message, string type = \"info\", float duration = -1)
+        {
+            if (duration < 0)
+                duration = _defaultDuration;
+
+            _notificationQueue.Enqueue(new NotificationData
+            {
+                Message = message,
+                Duration = duration,
+                Type = type
+            });
+        }
+
+        private async void ShowNextNotification()
+        {
+            if (_notificationQueue.Count == 0 || _isShowingNotification)
+                return;
+
+            _isShowingNotification = true;
+            var notificationData = _notificationQueue.Dequeue();
+
+            // Instancier la scène de notification
+            var notification = _notificationScene.Instantiate() as Control;
+            AddChild(notification);
+
+            // Configurer la notification
+            notification.Position = _notificationPosition;
+            var messageLabel = notification.GetNode<Label>(\"Message\");
+            if (messageLabel != null)
+            {
+                messageLabel.Text = notificationData.Message;
+            }
+
+            // Appliquer le style en fonction du type
+            if (notification.HasMethod(\"SetType\"))
+            {
+                notification.Call(\"SetType\", notificationData.Type);
+            }
+
+            // Animation d'entrée
+            if (notification.HasMethod(\"ShowNotification\"))
+            {
+                notification.Call(\"ShowNotification\");
+            }
+
+            // Attendre la durée spécifiée
+            await ToSignal(GetTree().CreateTimer(notificationData.Duration), \"timeout\");
+
+            // Animation de sortie et suppression
+            if (notification.HasMethod(\"HideNotification\"))
+            {
+                notification.Call(\"HideNotification\");
+                // Attendre que l'animation de sortie se termine
+                await ToSignal(notification, \"notification_hidden\");
+            }
+
+            notification.QueueFree();
+            _isShowingNotification = false;
+        }
+    }
+}
+"
+
+[node name="NotificationSystem" type="CanvasLayer"]
+script = SubResource("CSharpScript_6hxwi")
+_defaultDuration = null
+_notificationPosition = null
