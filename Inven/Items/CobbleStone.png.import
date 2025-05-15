@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl43mnpa1m8wg"
-path="res://.godot/imported/SwordFer.png-843c373ed3cfe31a8a0ae052f766697b.ctex"
+uid="uid://cracjewe1tunr"
+path="res://.godot/imported/CobbleStone.png-fd27312f9526a94e20fb63ee2adaf25a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inven/SwordFer.png"
-dest_files=["res://.godot/imported/SwordFer.png-843c373ed3cfe31a8a0ae052f766697b.ctex"]
+source_file="res://Inven/Items/CobbleStone.png"
+dest_files=["res://.godot/imported/CobbleStone.png-fd27312f9526a94e20fb63ee2adaf25a.ctex"]
 
 [params]
 
