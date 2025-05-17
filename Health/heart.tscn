@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bbovs6rdlamp7"]
 
-[ext_resource type="Script" path="res://Health/HeartHealth.cs" id="1_gepxg"]
+[ext_resource type="Script" uid="uid://bc616qbfiwhvo" path="res://Health/HeartHealth.cs" id="1_gepxg"]
 [ext_resource type="PackedScene" uid="uid://b0w1stkbgxh5q" path="res://Health/panel.tscn" id="1_ho2o8"]
 
 [node name="Heart" type="HBoxContainer"]

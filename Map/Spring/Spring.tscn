@@ -1,0 +1,34 @@
+[gd_scene load_steps=16 format=3 uid="uid://ortfjhh5vsv2"]
+
+[ext_resource type="Script" uid="uid://c86o7rkgi04a5" path="res://Map/Spring/map_gen.cs" id="1_or6hs"]
+[ext_resource type="PackedScene" uid="uid://dmlndbsbme0q4" path="res://Map/Spring/Rock1.tscn" id="3_lpqu7"]
+[ext_resource type="PackedScene" uid="uid://d07jpwrnqbr7d" path="res://Map/Spring/Leaves1.tscn" id="3_q3y6k"]
+[ext_resource type="PackedScene" uid="uid://bbhs87g3a2wh" path="res://Map/Spring/Leaves2.tscn" id="4_hw5ro"]
+[ext_resource type="PackedScene" uid="uid://cdmsj5n0mn48f" path="res://Map/Spring/mushroom.tscn" id="5_31me1"]
+[ext_resource type="PackedScene" uid="uid://cln0pr6e762p" path="res://Mobs/Orc1/Orc1.tscn" id="6_fk54o"]
+[ext_resource type="PackedScene" uid="uid://crvhgu2kmrc1r" path="res://Map/Spring/Rock2.tscn" id="6_r5ih6"]
+[ext_resource type="PackedScene" uid="uid://dsi7xhlxf7x4b" path="res://Map/Spring/Rock3.tscn" id="7_13hr6"]
+[ext_resource type="PackedScene" uid="uid://csi8lqt56oe2x" path="res://Mobs/Orc1/Orc2.tscn" id="7_euxog"]
+[ext_resource type="PackedScene" uid="uid://bem05aw7ep8oq" path="res://Map/Spring/Iron1.tscn" id="8_13hr6"]
+[ext_resource type="PackedScene" uid="uid://cjp10iebknckn" path="res://Mobs/Orc1/Orc3.tscn" id="8_jttld"]
+[ext_resource type="PackedScene" uid="uid://dlb6p2oyqc2db" path="res://Map/Spring/Tree1.tscn" id="8_twj0c"]
+[ext_resource type="PackedScene" uid="uid://bwhj3utfw8crn" path="res://Map/Spring/Iron2.tscn" id="9_twj0c"]
+[ext_resource type="PackedScene" uid="uid://qxvm4wm4jrpi" path="res://Map/Spring/Tree2.tscn" id="9_ubm6l"]
+[ext_resource type="PackedScene" uid="uid://dtrtgb4k8rsim" path="res://Map/Spring/Tree3.tscn" id="10_pohck"]
+
+[node name="MapDefaultForest" type="Node2D"]
+script = ExtResource("1_or6hs")
+mushroomScene = ExtResource("5_31me1")
+leavesScene1 = ExtResource("3_q3y6k")
+leavesScene2 = ExtResource("4_hw5ro")
+rockScene1 = ExtResource("3_lpqu7")
+rockScene2 = ExtResource("6_r5ih6")
+rockScene3 = ExtResource("7_13hr6")
+Ores1 = ExtResource("8_13hr6")
+Ores2 = ExtResource("9_twj0c")
+treeScene1 = ExtResource("8_twj0c")
+treeScene2 = ExtResource("9_ubm6l")
+treeScene3 = ExtResource("10_pohck")
+Orc1 = ExtResource("6_fk54o")
+Orc2 = ExtResource("7_euxog")
+Orc3 = ExtResource("8_jttld")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwhj3utfw8crn"]
+
+[ext_resource type="Texture2D" uid="uid://duaaertco266b" path="res://Map/Spring/Assets_shadow_source.png" id="1_2uqe2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ans8p"]
+size = Vector2(30.25, 23)
+
+[node name="Rock" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(1, 1.01042)
+texture = ExtResource("1_2uqe2")
+region_enabled = true
+region_rect = Rect2(101, 69, 35, 39)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.875, 6.5)
+shape = SubResource("RectangleShape2D_ans8p")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c61wipauo248k"]
+
+[ext_resource type="Texture2D" uid="uid://2ik53421aafr" path="res://Map/Spring/Rocks, Grasslands.png" id="1_v1lau"]
+
+[node name="Rock" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(1, 1.01042)
+texture = ExtResource("1_v1lau")
+region_enabled = true
+region_rect = Rect2(128, 224, 32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://e7rrkpl6ejs1"]
 
-[ext_resource type="Script" path="res://Inven/Item.cs" id="1_5c0fh"]
-[ext_resource type="Texture2D" uid="uid://dl43mnpa1m8wg" path="res://Inven/Items/SwordFer.png" id="2_vtqjb"]
+[ext_resource type="Script" uid="uid://b8ddxiyscno4q" path="res://Inven/Item.cs" id="1_5c0fh"]
+[ext_resource type="Texture2D" uid="uid://dl43mnpa1m8wg" path="res://Inven/SwordFer.png" id="2_vtqjb"]
 
 [node name="Item" type="Node2D"]
 z_index = 1

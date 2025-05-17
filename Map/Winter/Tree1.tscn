@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxm58mvhxe6t1"]
+
+[ext_resource type="Texture2D" uid="uid://c0nwt5eyequ1r" path="res://Map/Winter/trees_winter.png" id="1_i4dc2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5eyq"]
+size = Vector2(34, 19)
+
+[node name="Tree1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("1_i4dc2")
+region_enabled = true
+region_rect = Rect2(321, 16, 94, 125)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 101)
+shape = SubResource("RectangleShape2D_g5eyq")

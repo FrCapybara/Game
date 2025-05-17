@@ -1,6 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://c1jkfkgdoasrq"]
 
 [sub_resource type="CSharpScript" id="CSharpScript_6hxwi"]
+resource_local_to_scene = false
+resource_name = ""
 script/source = "using Godot;
 using System;
 using System.Collections.Generic;

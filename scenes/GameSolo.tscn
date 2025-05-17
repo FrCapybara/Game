@@ -1,22 +1,77 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1mwubhxqjq4p"]
+[gd_scene load_steps=33 format=3 uid="uid://d1mwubhxqjq4p"]
 
-[ext_resource type="Script" path="res://scenes/GameSolo.cs" id="1_vkscu"]
-[ext_resource type="PackedScene" uid="uid://bkasebcaotiaw" path="res://Map/Default_Forest/Default_floor.tscn" id="1_w4koo"]
+[ext_resource type="Script" uid="uid://dhwjq6xdcpqsg" path="res://scenes/GameSolo.cs" id="1_vkscu"]
 [ext_resource type="PackedScene" uid="uid://df6vfd06dvulw" path="res://Player/Player.tscn" id="2_su7ta"]
-[ext_resource type="PackedScene" uid="uid://ortfjhh5vsv2" path="res://Map/Default_Forest/Map_Default_Forest.tscn" id="3_8gai8"]
+[ext_resource type="PackedScene" uid="uid://dr25tluaia2xg" path="res://Map/Summer/top_left.tscn" id="3_b6oyk"]
+[ext_resource type="Script" uid="uid://dhirr41vmmip7" path="res://Map/Spring/floor_gen.cs" id="3_fo04r"]
+[ext_resource type="PackedScene" uid="uid://df6gg7kliywuk" path="res://Map/Summer/border_top.tscn" id="4_2b8x6"]
 [ext_resource type="PackedScene" uid="uid://b10jxbhfr2jrg" path="res://Inven/inventory_gui.tscn" id="4_nuovr"]
+[ext_resource type="PackedScene" uid="uid://cln0pr6e762p" path="res://Mobs/Orc/Orc1.tscn" id="5_0c7ed"]
+[ext_resource type="PackedScene" uid="uid://cbglo7gc5muv0" path="res://Map/Summer/top_right.tscn" id="5_2ytvb"]
 [ext_resource type="PackedScene" uid="uid://bbovs6rdlamp7" path="res://Health/heart.tscn" id="6_aseei"]
+[ext_resource type="PackedScene" uid="uid://q6owovexr3ts" path="res://Map/Summer/border_left.tscn" id="6_ftois"]
+[ext_resource type="PackedScene" uid="uid://bfuiewigmh5w" path="res://Map/Summer/border_right.tscn" id="7_f1lnj"]
+[ext_resource type="PackedScene" uid="uid://bdn4b5g7s0xa0" path="res://Map/Summer/down_left.tscn" id="8_is3li"]
+[ext_resource type="PackedScene" uid="uid://bvvxjqp6tmx32" path="res://Map/Summer/border_down.tscn" id="9_7f84q"]
+[ext_resource type="PackedScene" uid="uid://b6rko8iwrlrao" path="res://Map/Summer/down_right.tscn" id="10_c0atm"]
+[ext_resource type="PackedScene" uid="uid://c8r81fw2ck3vm" path="res://Map/Summer/floor1.tscn" id="11_1ys02"]
+[ext_resource type="PackedScene" uid="uid://btp56wu7un2xq" path="res://Map/Summer/floor2.tscn" id="12_gh364"]
+[ext_resource type="PackedScene" uid="uid://b0fjfs8663usc" path="res://Map/Summer/floor3.tscn" id="13_iuh8c"]
+[ext_resource type="PackedScene" uid="uid://jbihn8yj0qks" path="res://Map/Summer/floor4.tscn" id="14_upmyo"]
+[ext_resource type="PackedScene" uid="uid://bjve6jd2jabue" path="res://Map/Summer/foor5.tscn" id="15_lhp4m"]
+[ext_resource type="Script" uid="uid://c86o7rkgi04a5" path="res://Map/Spring/map_gen.cs" id="17_qpgeg"]
+[ext_resource type="PackedScene" uid="uid://dik8s3ggpikaw" path="res://Map/Summer/mushroom.tscn" id="18_k2pe4"]
+[ext_resource type="PackedScene" uid="uid://csf5tw411o1k2" path="res://Map/Summer/Leaves1.tscn" id="19_6ym2b"]
+[ext_resource type="PackedScene" uid="uid://712wex7lpgtc" path="res://Map/Summer/Leaves2.tscn" id="20_gm3ia"]
+[ext_resource type="PackedScene" uid="uid://eag186201kvg" path="res://Map/Summer/Rock1.tscn" id="21_53q3i"]
+[ext_resource type="PackedScene" uid="uid://c61wipauo248k" path="res://Map/Summer/Rock2.tscn" id="22_uvd08"]
+[ext_resource type="PackedScene" uid="uid://cyew0fkj4ti1g" path="res://Map/Summer/Rock3.tscn" id="23_mpqc8"]
+[ext_resource type="PackedScene" uid="uid://bumjiae0o473j" path="res://Map/Summer/Cuivre1.tscn" id="24_a7nmx"]
+[ext_resource type="PackedScene" uid="uid://c58gk611cekxw" path="res://Map/Summer/Cuivre2.tscn" id="25_20dql"]
+[ext_resource type="PackedScene" uid="uid://blibjlg6gt4me" path="res://Map/Summer/Tree1.tscn" id="26_amxik"]
+[ext_resource type="PackedScene" uid="uid://bgprcax2uwakl" path="res://Map/Summer/Tree2.tscn" id="27_rbgwx"]
+[ext_resource type="PackedScene" uid="uid://bfrgdnsvbopcn" path="res://Map/Summer/Tree3.tscn" id="28_gfarc"]
+[ext_resource type="PackedScene" uid="uid://csi8lqt56oe2x" path="res://Mobs/Orc/Orc2.tscn" id="30_lmc4c"]
 
 [node name="GameSolo" type="Node2D" node_paths=PackedStringArray("_mapGen", "_floorGen")]
 script = ExtResource("1_vkscu")
-_mapGen = NodePath("MapDefaultForest")
-_floorGen = NodePath("DefaultFloor")
+_mapGen = NodePath("Objects")
+_floorGen = NodePath("Floor")
 
-[node name="DefaultFloor" parent="." instance=ExtResource("1_w4koo")]
+[node name="Floor" type="Node2D" parent="."]
+script = ExtResource("3_fo04r")
+topLeftScene = ExtResource("3_b6oyk")
+topScene = ExtResource("4_2b8x6")
+topRightScene = ExtResource("5_2ytvb")
+leftScene = ExtResource("6_ftois")
+rightScene = ExtResource("7_f1lnj")
+downLeftScene = ExtResource("8_is3li")
+downScene = ExtResource("9_7f84q")
+downRightScene = ExtResource("10_c0atm")
+floorScene = ExtResource("11_1ys02")
+floor2Scence = ExtResource("12_gh364")
+floor3Scence = ExtResource("13_iuh8c")
+floor4Scene = ExtResource("14_upmyo")
+floor5Scene = ExtResource("15_lhp4m")
 
 [node name="Player" parent="." instance=ExtResource("2_su7ta")]
 
-[node name="MapDefaultForest" parent="." instance=ExtResource("3_8gai8")]
+[node name="Objects" type="Node2D" parent="."]
+script = ExtResource("17_qpgeg")
+mushroomScene = ExtResource("18_k2pe4")
+leavesScene1 = ExtResource("19_6ym2b")
+leavesScene2 = ExtResource("20_gm3ia")
+rockScene1 = ExtResource("21_53q3i")
+rockScene2 = ExtResource("22_uvd08")
+rockScene3 = ExtResource("23_mpqc8")
+Ores1 = ExtResource("24_a7nmx")
+Ores2 = ExtResource("25_20dql")
+treeScene1 = ExtResource("26_amxik")
+treeScene2 = ExtResource("27_rbgwx")
+treeScene3 = ExtResource("28_gfarc")
+Mob1 = ExtResource("5_0c7ed")
+Mob2 = ExtResource("30_lmc4c")
+Mob3 = ExtResource("5_0c7ed")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_scale = 202.794

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://clqk2y2jvhukr"]
+
+[ext_resource type="Texture2D" uid="uid://vq4lm10hqcd1" path="res://Map/Autumn/plants_autumn.png" id="1_lk8ir"]
+
+[node name="Leaves" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_lk8ir")
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

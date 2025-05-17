@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://7mt0h6o14c3"]
+
+[ext_resource type="Texture2D" uid="uid://bbjgss4ky47eo" path="res://Map/Spring/terrain_spring.png" id="1_mb2xe"]
+
+[node name="Floor" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("1_mb2xe")
+region_enabled = true
+region_rect = Rect2(160, 32, 32, 32)

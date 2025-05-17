@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://nt6e08tysg3b"]
+
+[ext_resource type="Texture2D" uid="uid://5oy1aa780h26" path="res://Map/Winter/plants_winter.png" id="1_aqgtr"]
+
+[node name="Leaves" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_aqgtr")
+region_enabled = true
+region_rect = Rect2(263, 23, 22, 28)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

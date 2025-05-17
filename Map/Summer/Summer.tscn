@@ -1,0 +1,64 @@
+[gd_scene load_steps=28 format=3 uid="uid://tv25o2ujk26f"]
+
+[ext_resource type="Script" uid="uid://dhirr41vmmip7" path="res://Map/Spring/floor_gen.cs" id="1_b03uh"]
+[ext_resource type="Script" uid="uid://c86o7rkgi04a5" path="res://Map/Spring/map_gen.cs" id="2_isu2b"]
+[ext_resource type="PackedScene" uid="uid://ds2r1rpxfnhtr" path="res://Map/Winter/top_left.tscn" id="2_jxkqd"]
+[ext_resource type="PackedScene" uid="uid://cwfugnciy4yt2" path="res://Map/Winter/border_top.tscn" id="3_xbc24"]
+[ext_resource type="PackedScene" uid="uid://d0dnhnv7wxwnr" path="res://Map/Winter/top_right.tscn" id="4_xqnvm"]
+[ext_resource type="PackedScene" uid="uid://cu7odrkbvvxlm" path="res://Map/Winter/border_left.tscn" id="5_vfe6p"]
+[ext_resource type="PackedScene" uid="uid://dlasqvqqbvbvp" path="res://Map/Winter/border_right.tscn" id="6_d7sl1"]
+[ext_resource type="PackedScene" uid="uid://c7vik67jnc7c5" path="res://Map/Winter/down_left.tscn" id="7_l30c3"]
+[ext_resource type="PackedScene" uid="uid://dlpbck6lmxcfd" path="res://Map/Winter/border_down.tscn" id="8_834l2"]
+[ext_resource type="PackedScene" uid="uid://dtws2iwm6gtbv" path="res://Map/Winter/down_right.tscn" id="9_7optx"]
+[ext_resource type="PackedScene" uid="uid://dp5qwfmvqw3fq" path="res://Map/Winter/floor1.tscn" id="10_15hdk"]
+[ext_resource type="PackedScene" uid="uid://d2nukdb0foq6y" path="res://Map/Winter/floor2.tscn" id="11_5th4h"]
+[ext_resource type="PackedScene" uid="uid://uugp4x1psdco" path="res://Map/Winter/floor3.tscn" id="12_3lacr"]
+[ext_resource type="PackedScene" uid="uid://cnf3e48c5ncx7" path="res://Map/Winter/floor4.tscn" id="13_uemk6"]
+[ext_resource type="PackedScene" uid="uid://dkxhh8ixy3jf0" path="res://Map/Winter/foor5.tscn" id="14_q0347"]
+[ext_resource type="PackedScene" uid="uid://bwy3jxr7fraie" path="res://Map/Winter/mushroom.tscn" id="16_jxkqd"]
+[ext_resource type="PackedScene" uid="uid://nt6e08tysg3b" path="res://Map/Winter/Leaves1.tscn" id="17_xbc24"]
+[ext_resource type="PackedScene" uid="uid://cwjyuc6h5io7v" path="res://Map/Winter/Leaves2.tscn" id="18_xqnvm"]
+[ext_resource type="PackedScene" uid="uid://daxdx5dyo2cbd" path="res://Map/Winter/Rock1.tscn" id="19_vfe6p"]
+[ext_resource type="PackedScene" uid="uid://c6egrm0xtft6k" path="res://Map/Winter/Rock2.tscn" id="20_d7sl1"]
+[ext_resource type="PackedScene" uid="uid://bl01065lh320h" path="res://Map/Winter/Rock3.tscn" id="21_l30c3"]
+[ext_resource type="PackedScene" uid="uid://isahvc16ctwm" path="res://Map/Winter/Diamond1.tscn" id="22_834l2"]
+[ext_resource type="PackedScene" uid="uid://jyjg5gn8osva" path="res://Map/Winter/Diamond2.tscn" id="23_7optx"]
+[ext_resource type="PackedScene" uid="uid://dxm58mvhxe6t1" path="res://Map/Winter/Tree1.tscn" id="24_15hdk"]
+[ext_resource type="PackedScene" uid="uid://bactwnmqm76h0" path="res://Map/Winter/Tree2.tscn" id="25_5th4h"]
+[ext_resource type="PackedScene" uid="uid://3lb4n2xgxjjw" path="res://Map/Winter/Tree3.tscn" id="26_3lacr"]
+[ext_resource type="PackedScene" uid="uid://cln0pr6e762p" path="res://Mobs/Orc/Orc1.tscn" id="27_emcyj"]
+
+[node name="Winter" type="Node2D"]
+
+[node name="Floor" type="Node2D" parent="."]
+script = ExtResource("1_b03uh")
+topLeftScene = ExtResource("2_jxkqd")
+topScene = ExtResource("3_xbc24")
+topRightScene = ExtResource("4_xqnvm")
+leftScene = ExtResource("5_vfe6p")
+rightScene = ExtResource("6_d7sl1")
+downLeftScene = ExtResource("7_l30c3")
+downScene = ExtResource("8_834l2")
+downRightScene = ExtResource("9_7optx")
+floorScene = ExtResource("10_15hdk")
+floor2Scence = ExtResource("11_5th4h")
+floor3Scence = ExtResource("12_3lacr")
+floor4Scene = ExtResource("13_uemk6")
+floor5Scene = ExtResource("14_q0347")
+
+[node name="Objects" type="Node2D" parent="."]
+script = ExtResource("2_isu2b")
+mushroomScene = ExtResource("16_jxkqd")
+leavesScene1 = ExtResource("17_xbc24")
+leavesScene2 = ExtResource("18_xqnvm")
+rockScene1 = ExtResource("19_vfe6p")
+rockScene2 = ExtResource("20_d7sl1")
+rockScene3 = ExtResource("21_l30c3")
+Ores1 = ExtResource("22_834l2")
+Ores2 = ExtResource("23_7optx")
+treeScene1 = ExtResource("24_15hdk")
+treeScene2 = ExtResource("25_5th4h")
+treeScene3 = ExtResource("26_3lacr")
+Mob1 = ExtResource("27_emcyj")
+Mob2 = ExtResource("27_emcyj")
+Mob3 = ExtResource("27_emcyj")

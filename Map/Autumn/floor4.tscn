@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://rss1pb02231p"]
+
+[ext_resource type="Texture2D" uid="uid://b5cgwqc3ub7jk" path="res://Map/Autumn/terrain_autumn.png" id="1_7qms3"]
+
+[node name="Floor4" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("1_7qms3")
+region_enabled = true
+region_rect = Rect2(96, 64, 32, 32)

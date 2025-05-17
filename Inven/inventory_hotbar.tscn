@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d0ms88006ocvi"]
 
-[ext_resource type="Script" path="res://Inven/InventoryHotbar.cs" id="1_hotbar"]
+[ext_resource type="Script" uid="uid://c5rs8fekh7ywj" path="res://Inven/InventoryHotbar.cs" id="1_hotbar"]
 
 [node name="InventoryHotbar" type="Control"]
 custom_minimum_size = Vector2(306, 40)

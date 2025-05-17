@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbhs87g3a2wh"]
+
+[ext_resource type="Texture2D" uid="uid://bmyvrobscb6ph" path="res://Map/Spring/plants_spring.png" id="1_mhvdo"]
+
+[node name="Leaves" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_mhvdo")
+region_enabled = true
+region_rect = Rect2(64, 0, 32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=21 format=3 uid="uid://df6vfd06dvulw"]
 
-[ext_resource type="Script" path="res://Player/Player.cs" id="1_3pq3t"]
-[ext_resource type="Script" path="res://Player/CameraFollow.cs" id="3_o3ov8"]
+[ext_resource type="Script" uid="uid://d2fs4ga5h4ams" path="res://Player/Player.cs" id="1_3pq3t"]
+[ext_resource type="Script" uid="uid://8gd1jw81ukbs" path="res://Player/CameraFollow.cs" id="3_o3ov8"]
 [ext_resource type="Texture2D" uid="uid://jhso7xrxoun2" path="res://Player/Animation Marche JD (2).png" id="4_jp0ga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f1npv"]
-size = Vector2(38, 84)
+size = Vector2(28, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhaf2"]
 atlas = ExtResource("4_jp0ga")
@@ -129,7 +129,7 @@ _sprite = NodePath("AnimatedSprite2D")
 _camera = NodePath("Camera2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(-1, 35.5)
 shape = SubResource("RectangleShape2D_f1npv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

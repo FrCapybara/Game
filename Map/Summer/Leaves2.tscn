@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://712wex7lpgtc"]
+
+[ext_resource type="Texture2D" uid="uid://cgwy7b4wkrfv2" path="res://Map/Summer/plants_summer.png" id="1_4sopi"]
+
+[node name="Leaves" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("1_4sopi")
+region_enabled = true
+region_rect = Rect2(197, 3, 24, 29)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

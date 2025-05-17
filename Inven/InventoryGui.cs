@@ -50,18 +50,14 @@ public partial class InventoryGui : Control
 		_draggedItemLabel.AddThemeConstantOverride("shadow_offset_y", 1);
 		_draggedItemVisual.AddChild(_draggedItemLabel);
 		
-		////////////////////////////////////////////////////////////////////////// On ajoute ici les items
-		AddItem(new Item("Sword", ResourceLoader.Load<Texture2D>("res://Inven/Items/SwordFer.png"), 2, 5));
-		AddItem(new Item("Sword", ResourceLoader.Load<Texture2D>("res://Inven/Items/SwordFer.png"), 3, 5));
-		AddItem(new Item("Sword", ResourceLoader.Load<Texture2D>("res://Inven/Items/SwordFer.png"), 1, 5));
-		AddItem(new Item("Stick", ResourceLoader.Load<Texture2D>("res://Inven/Items/Stick.png"), 2, 64));
+		////////////////////////////////////////////////////////////////////////// On ajoute items ici
 		AddItem(new Item("Stick", ResourceLoader.Load<Texture2D>("res://Inven/Items/Stick.png"), 25, 64));
 		AddItem(new Item("IronLingot", ResourceLoader.Load<Texture2D>("res://Inven/Items/IronLingot.png"), 20, 64));
 		AddItem(new Item("Diamond", ResourceLoader.Load<Texture2D>("res://Inven/Items/Diamond.png"), 20, 64));
 		AddItem(new Item("Pickaxe2", ResourceLoader.Load<Texture2D>("res://Inven/Items/Pickaxe2.png"), 1, 1));
 		AddItem(new Item("CobbleStone", ResourceLoader.Load<Texture2D>("res://Inven/Items/CobbleStone.png"), 20, 64));
-		UpdateUI();
 		
+		UpdateUI();
 	}
 	
 	public void Open() { _isOpen = true; Visible = true; UpdateUI(); }

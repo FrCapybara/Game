@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdn4b5g7s0xa0"]
+
+[ext_resource type="Texture2D" uid="uid://bqmiss6iyrrxl" path="res://Map/Summer/terrain_summer.png" id="1_el2ne"]
+
+[node name="DownLeft" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("1_el2ne")
+region_enabled = true
+region_rect = Rect2(192, 64, 32, 32)

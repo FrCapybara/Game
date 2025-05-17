@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://iad2uacph15i"]
+
+[ext_resource type="Texture2D" uid="uid://cm831vlbhw3fg" path="res://Map/Autumn/trees_autumn.png" id="1_khot8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5eyq"]
+size = Vector2(34, 19)
+
+[node name="Tree1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("1_khot8")
+region_enabled = true
+region_rect = Rect2(3, 274, 90, 123)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 93)
+shape = SubResource("RectangleShape2D_g5eyq")

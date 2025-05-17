@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdmsj5n0mn48f"]
+
+[ext_resource type="Texture2D" uid="uid://c0wgvjco7xt2w" path="res://Map/Spring/mushrooms.png" id="1_hn8hm"]
+
+[node name="Mushroom" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_hn8hm")
+region_enabled = true
+region_rect = Rect2(96, 0, 32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

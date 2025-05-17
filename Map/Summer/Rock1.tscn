@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://eag186201kvg"]
+
+[ext_resource type="Texture2D" uid="uid://2ik53421aafr" path="res://Map/Spring/Rocks, Grasslands.png" id="1_4iqkl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0a3t"]
+size = Vector2(56, 20)
+
+[node name="Rock" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(1, 1.01042)
+texture = ExtResource("1_4iqkl")
+region_enabled = true
+region_rect = Rect2(128, 128, 64, 56)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_f0a3t")
