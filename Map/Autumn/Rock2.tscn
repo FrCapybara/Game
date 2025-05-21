@@ -8,6 +8,7 @@
 position = Vector2(0, -0.5)
 scale = Vector2(1, 1.01042)
 texture = ExtResource("1_v1lau")
+offset = Vector2(0, -13)
 region_enabled = true
 region_rect = Rect2(128, 96, 32, 32)
 

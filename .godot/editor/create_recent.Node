@@ -1,8 +1,10 @@
+Timer
+Sprite2D
 Node2D
+AnimatedSprite2D
 Node
 CollisionShape2D
 StaticBody2D
-Sprite2D
 CanvasLayer
 Label
 Panel
@@ -11,4 +13,3 @@ TextureRect
 HBoxContainer
 MultiplayerSynchronizer
 MultiplayerSpawner
-CharacterBody2D

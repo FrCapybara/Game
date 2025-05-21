@@ -1,62 +1,109 @@
-[gd_scene load_steps=33 format=3 uid="uid://d1mwubhxqjq4p"]
+[gd_scene load_steps=63 format=3 uid="uid://d1mwubhxqjq4p"]
 
 [ext_resource type="Script" uid="uid://dhwjq6xdcpqsg" path="res://scenes/GameSolo.cs" id="1_vkscu"]
 [ext_resource type="PackedScene" uid="uid://df6vfd06dvulw" path="res://Player/Player.tscn" id="2_su7ta"]
-[ext_resource type="PackedScene" uid="uid://dr25tluaia2xg" path="res://Map/Summer/top_left.tscn" id="3_b6oyk"]
+[ext_resource type="PackedScene" uid="uid://d364tvrwv0ewl" path="res://Map/Spring/Floor.tscn" id="3_4xbcf"]
 [ext_resource type="Script" uid="uid://dhirr41vmmip7" path="res://Map/Spring/floor_gen.cs" id="3_fo04r"]
-[ext_resource type="PackedScene" uid="uid://df6gg7kliywuk" path="res://Map/Summer/border_top.tscn" id="4_2b8x6"]
+[ext_resource type="PackedScene" uid="uid://cpxefvkulc4or" path="res://Map/Autumn/Floor.tscn" id="4_3gtcv"]
 [ext_resource type="PackedScene" uid="uid://b10jxbhfr2jrg" path="res://Inven/inventory_gui.tscn" id="4_nuovr"]
 [ext_resource type="PackedScene" uid="uid://cln0pr6e762p" path="res://Mobs/Orc/Orc1.tscn" id="5_0c7ed"]
-[ext_resource type="PackedScene" uid="uid://cbglo7gc5muv0" path="res://Map/Summer/top_right.tscn" id="5_2ytvb"]
+[ext_resource type="PackedScene" uid="uid://c0ndbo1errsx6" path="res://Map/Winter/Floor.tscn" id="5_xtyw6"]
 [ext_resource type="PackedScene" uid="uid://bbovs6rdlamp7" path="res://Health/heart.tscn" id="6_aseei"]
-[ext_resource type="PackedScene" uid="uid://q6owovexr3ts" path="res://Map/Summer/border_left.tscn" id="6_ftois"]
-[ext_resource type="PackedScene" uid="uid://bfuiewigmh5w" path="res://Map/Summer/border_right.tscn" id="7_f1lnj"]
-[ext_resource type="PackedScene" uid="uid://bdn4b5g7s0xa0" path="res://Map/Summer/down_left.tscn" id="8_is3li"]
-[ext_resource type="PackedScene" uid="uid://bvvxjqp6tmx32" path="res://Map/Summer/border_down.tscn" id="9_7f84q"]
-[ext_resource type="PackedScene" uid="uid://b6rko8iwrlrao" path="res://Map/Summer/down_right.tscn" id="10_c0atm"]
-[ext_resource type="PackedScene" uid="uid://c8r81fw2ck3vm" path="res://Map/Summer/floor1.tscn" id="11_1ys02"]
-[ext_resource type="PackedScene" uid="uid://btp56wu7un2xq" path="res://Map/Summer/floor2.tscn" id="12_gh364"]
-[ext_resource type="PackedScene" uid="uid://b0fjfs8663usc" path="res://Map/Summer/floor3.tscn" id="13_iuh8c"]
-[ext_resource type="PackedScene" uid="uid://jbihn8yj0qks" path="res://Map/Summer/floor4.tscn" id="14_upmyo"]
-[ext_resource type="PackedScene" uid="uid://bjve6jd2jabue" path="res://Map/Summer/foor5.tscn" id="15_lhp4m"]
 [ext_resource type="Script" uid="uid://c86o7rkgi04a5" path="res://Map/Spring/map_gen.cs" id="17_qpgeg"]
 [ext_resource type="PackedScene" uid="uid://dik8s3ggpikaw" path="res://Map/Summer/mushroom.tscn" id="18_k2pe4"]
+[ext_resource type="PackedScene" uid="uid://dcibugxbkoir2" path="res://Map/Autumn/mushroom_autumn.tscn" id="18_lhp4m"]
 [ext_resource type="PackedScene" uid="uid://csf5tw411o1k2" path="res://Map/Summer/Leaves1.tscn" id="19_6ym2b"]
+[ext_resource type="PackedScene" uid="uid://qpakevld4ufa" path="res://Map/Autumn/Leaves1_autumn.tscn" id="19_k2pe4"]
+[ext_resource type="PackedScene" uid="uid://clqk2y2jvhukr" path="res://Map/Autumn/Leaves2_autumn.tscn" id="20_6ym2b"]
+[ext_resource type="PackedScene" uid="uid://diuxh7x2w68kx" path="res://Mobs/Slime/Slime1.tscn" id="20_g3okx"]
 [ext_resource type="PackedScene" uid="uid://712wex7lpgtc" path="res://Map/Summer/Leaves2.tscn" id="20_gm3ia"]
 [ext_resource type="PackedScene" uid="uid://eag186201kvg" path="res://Map/Summer/Rock1.tscn" id="21_53q3i"]
+[ext_resource type="PackedScene" uid="uid://cuo2uytmnvoai" path="res://Map/Autumn/Rock1.tscn" id="21_gm3ia"]
+[ext_resource type="PackedScene" uid="uid://pv7g48x12o11" path="res://Map/Autumn/Rock2.tscn" id="22_53q3i"]
 [ext_resource type="PackedScene" uid="uid://c61wipauo248k" path="res://Map/Summer/Rock2.tscn" id="22_uvd08"]
 [ext_resource type="PackedScene" uid="uid://cyew0fkj4ti1g" path="res://Map/Summer/Rock3.tscn" id="23_mpqc8"]
+[ext_resource type="PackedScene" uid="uid://c3200nxahc4dv" path="res://Map/Autumn/Rock3.tscn" id="23_uvd08"]
 [ext_resource type="PackedScene" uid="uid://bumjiae0o473j" path="res://Map/Summer/Cuivre1.tscn" id="24_a7nmx"]
+[ext_resource type="PackedScene" uid="uid://x6e2liylc1lq" path="res://Map/Autumn/Gold1.tscn" id="24_mpqc8"]
 [ext_resource type="PackedScene" uid="uid://c58gk611cekxw" path="res://Map/Summer/Cuivre2.tscn" id="25_20dql"]
+[ext_resource type="PackedScene" uid="uid://dno5x7jm3tw5j" path="res://Map/Autumn/Gold2.tscn" id="25_a7nmx"]
+[ext_resource type="PackedScene" uid="uid://c085qpdlpwide" path="res://Map/Autumn/Tree1.tscn" id="26_20dql"]
 [ext_resource type="PackedScene" uid="uid://blibjlg6gt4me" path="res://Map/Summer/Tree1.tscn" id="26_amxik"]
+[ext_resource type="PackedScene" uid="uid://dli67bgw1ikx5" path="res://Map/Autumn/Tree2.tscn" id="27_amxik"]
 [ext_resource type="PackedScene" uid="uid://bgprcax2uwakl" path="res://Map/Summer/Tree2.tscn" id="27_rbgwx"]
 [ext_resource type="PackedScene" uid="uid://bfrgdnsvbopcn" path="res://Map/Summer/Tree3.tscn" id="28_gfarc"]
+[ext_resource type="PackedScene" uid="uid://iad2uacph15i" path="res://Map/Autumn/Tree3.tscn" id="28_rbgwx"]
 [ext_resource type="PackedScene" uid="uid://csi8lqt56oe2x" path="res://Mobs/Orc/Orc2.tscn" id="30_lmc4c"]
+[ext_resource type="PackedScene" uid="uid://cdmsj5n0mn48f" path="res://Map/Spring/mushroom.tscn" id="31_nyis5"]
+[ext_resource type="PackedScene" uid="uid://b36e55wisopis" path="res://Mobs/Slime/Slime2.tscn" id="32_6htvw"]
+[ext_resource type="PackedScene" uid="uid://d07jpwrnqbr7d" path="res://Map/Spring/Leaves1.tscn" id="32_iruq2"]
+[ext_resource type="PackedScene" uid="uid://bbhs87g3a2wh" path="res://Map/Spring/Leaves2.tscn" id="33_787lv"]
+[ext_resource type="PackedScene" uid="uid://bn282w4kjoja" path="res://Mobs/Vampires/Vampires1.tscn" id="33_ynjrc"]
+[ext_resource type="PackedScene" uid="uid://dmlndbsbme0q4" path="res://Map/Spring/Rock1.tscn" id="34_b4wwq"]
+[ext_resource type="PackedScene" uid="uid://crvhgu2kmrc1r" path="res://Map/Spring/Rock2.tscn" id="35_wpxiv"]
+[ext_resource type="PackedScene" uid="uid://dsi7xhlxf7x4b" path="res://Map/Spring/Rock3.tscn" id="36_lvhr1"]
+[ext_resource type="PackedScene" uid="uid://bem05aw7ep8oq" path="res://Map/Spring/Iron1.tscn" id="37_pvkn5"]
+[ext_resource type="PackedScene" uid="uid://bwhj3utfw8crn" path="res://Map/Spring/Iron2.tscn" id="38_wqtis"]
+[ext_resource type="PackedScene" uid="uid://dlb6p2oyqc2db" path="res://Map/Spring/Tree1.tscn" id="39_bxmjk"]
+[ext_resource type="PackedScene" uid="uid://qxvm4wm4jrpi" path="res://Map/Spring/Tree2.tscn" id="40_rhip4"]
+[ext_resource type="PackedScene" uid="uid://dtrtgb4k8rsim" path="res://Map/Spring/Tree3.tscn" id="41_me2kj"]
+[ext_resource type="PackedScene" uid="uid://cjp10iebknckn" path="res://Mobs/Orc/Orc3.tscn" id="44_sgt4t"]
+[ext_resource type="PackedScene" uid="uid://c2y6od6fwmxgo" path="res://Mobs/Vampires/Vampires2.tscn" id="46_nyis5"]
+[ext_resource type="PackedScene" uid="uid://cdexjxawgjxgc" path="res://Mobs/Slime/Slime3.tscn" id="59_iruq2"]
+[ext_resource type="PackedScene" uid="uid://p62pefg4lv80" path="res://Mobs/Vampires/Vampires3.tscn" id="60_787lv"]
+[ext_resource type="PackedScene" uid="uid://bwy3jxr7fraie" path="res://Map/Winter/mushroom.tscn" id="92_xd58b"]
+[ext_resource type="PackedScene" uid="uid://nt6e08tysg3b" path="res://Map/Winter/Leaves1.tscn" id="93_76wfx"]
+[ext_resource type="PackedScene" uid="uid://cwjyuc6h5io7v" path="res://Map/Winter/Leaves2.tscn" id="94_ia4k3"]
+[ext_resource type="PackedScene" uid="uid://daxdx5dyo2cbd" path="res://Map/Winter/Rock1.tscn" id="95_h2p43"]
+[ext_resource type="PackedScene" uid="uid://c6egrm0xtft6k" path="res://Map/Winter/Rock2.tscn" id="96_day5h"]
+[ext_resource type="PackedScene" uid="uid://bl01065lh320h" path="res://Map/Winter/Rock3.tscn" id="97_l1dr1"]
+[ext_resource type="PackedScene" uid="uid://isahvc16ctwm" path="res://Map/Winter/Diamond1.tscn" id="98_uxpia"]
+[ext_resource type="PackedScene" uid="uid://jyjg5gn8osva" path="res://Map/Winter/Diamond2.tscn" id="99_gjdjo"]
+[ext_resource type="PackedScene" uid="uid://dxm58mvhxe6t1" path="res://Map/Winter/Tree1.tscn" id="100_f1p44"]
+[ext_resource type="PackedScene" uid="uid://bactwnmqm76h0" path="res://Map/Winter/Tree2.tscn" id="101_jyfli"]
+[ext_resource type="PackedScene" uid="uid://3lb4n2xgxjjw" path="res://Map/Winter/Tree3.tscn" id="102_oifby"]
 
-[node name="GameSolo" type="Node2D" node_paths=PackedStringArray("_mapGen", "_floorGen")]
+[node name="GameSolo" type="Node2D" node_paths=PackedStringArray("map_summer", "map_spring", "map_autumn", "map_winter", "floor_summer", "floor_spring", "floor_autumn", "floor_winter", "player")]
+y_sort_enabled = true
 script = ExtResource("1_vkscu")
-_mapGen = NodePath("Objects")
-_floorGen = NodePath("Floor")
+map_summer = NodePath("Node2D/Objects_Summer")
+map_spring = NodePath("Node2D/Objects_Spring")
+map_autumn = NodePath("Node2D/Objects_Autumn")
+map_winter = NodePath("Node2D/Objects_Winter")
+floor_summer = NodePath("Floor_Summer")
+floor_spring = NodePath("Floor_Spring")
+floor_autumn = NodePath("Floor_Autumn")
+floor_winter = NodePath("Floor_Winter")
+player = NodePath("Node2D/Player")
 
-[node name="Floor" type="Node2D" parent="."]
+[node name="Floor_Summer" type="Node2D" parent="."]
+z_index = -1
 script = ExtResource("3_fo04r")
-topLeftScene = ExtResource("3_b6oyk")
-topScene = ExtResource("4_2b8x6")
-topRightScene = ExtResource("5_2ytvb")
-leftScene = ExtResource("6_ftois")
-rightScene = ExtResource("7_f1lnj")
-downLeftScene = ExtResource("8_is3li")
-downScene = ExtResource("9_7f84q")
-downRightScene = ExtResource("10_c0atm")
-floorScene = ExtResource("11_1ys02")
-floor2Scence = ExtResource("12_gh364")
-floor3Scence = ExtResource("13_iuh8c")
-floor4Scene = ExtResource("14_upmyo")
-floor5Scene = ExtResource("15_lhp4m")
+floor = ExtResource("3_4xbcf")
 
-[node name="Player" parent="." instance=ExtResource("2_su7ta")]
+[node name="Floor_Spring" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("3_fo04r")
+floor = ExtResource("3_4xbcf")
 
-[node name="Objects" type="Node2D" parent="."]
+[node name="Floor_Autumn" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("3_fo04r")
+floor = ExtResource("4_3gtcv")
+
+[node name="Floor_Winter" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("3_fo04r")
+floor = ExtResource("5_xtyw6")
+
+[node name="Node2D" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" parent="Node2D" instance=ExtResource("2_su7ta")]
+y_sort_enabled = true
+
+[node name="Objects_Summer" type="Node2D" parent="Node2D"]
+y_sort_enabled = true
 script = ExtResource("17_qpgeg")
 mushroomScene = ExtResource("18_k2pe4")
 leavesScene1 = ExtResource("19_6ym2b")
@@ -70,8 +117,62 @@ treeScene1 = ExtResource("26_amxik")
 treeScene2 = ExtResource("27_rbgwx")
 treeScene3 = ExtResource("28_gfarc")
 Mob1 = ExtResource("5_0c7ed")
-Mob2 = ExtResource("30_lmc4c")
-Mob3 = ExtResource("5_0c7ed")
+Mob2 = ExtResource("20_g3okx")
+Mob3 = ExtResource("20_g3okx")
+
+[node name="Objects_Spring" type="Node2D" parent="Node2D"]
+y_sort_enabled = true
+script = ExtResource("17_qpgeg")
+mushroomScene = ExtResource("31_nyis5")
+leavesScene1 = ExtResource("32_iruq2")
+leavesScene2 = ExtResource("33_787lv")
+rockScene1 = ExtResource("34_b4wwq")
+rockScene2 = ExtResource("35_wpxiv")
+rockScene3 = ExtResource("36_lvhr1")
+Ores1 = ExtResource("37_pvkn5")
+Ores2 = ExtResource("38_wqtis")
+treeScene1 = ExtResource("39_bxmjk")
+treeScene2 = ExtResource("40_rhip4")
+treeScene3 = ExtResource("41_me2kj")
+Mob1 = ExtResource("5_0c7ed")
+Mob2 = ExtResource("32_6htvw")
+Mob3 = ExtResource("33_ynjrc")
+
+[node name="Objects_Autumn" type="Node2D" parent="Node2D"]
+y_sort_enabled = true
+script = ExtResource("17_qpgeg")
+mushroomScene = ExtResource("18_lhp4m")
+leavesScene1 = ExtResource("19_k2pe4")
+leavesScene2 = ExtResource("20_6ym2b")
+rockScene1 = ExtResource("21_gm3ia")
+rockScene2 = ExtResource("22_53q3i")
+rockScene3 = ExtResource("23_uvd08")
+Ores1 = ExtResource("24_mpqc8")
+Ores2 = ExtResource("25_a7nmx")
+treeScene1 = ExtResource("26_20dql")
+treeScene2 = ExtResource("27_amxik")
+treeScene3 = ExtResource("28_rbgwx")
+Mob1 = ExtResource("30_lmc4c")
+Mob2 = ExtResource("32_6htvw")
+Mob3 = ExtResource("46_nyis5")
+
+[node name="Objects_Winter" type="Node2D" parent="Node2D"]
+y_sort_enabled = true
+script = ExtResource("17_qpgeg")
+mushroomScene = ExtResource("92_xd58b")
+leavesScene1 = ExtResource("93_76wfx")
+leavesScene2 = ExtResource("94_ia4k3")
+rockScene1 = ExtResource("95_h2p43")
+rockScene2 = ExtResource("96_day5h")
+rockScene3 = ExtResource("97_l1dr1")
+Ores1 = ExtResource("98_uxpia")
+Ores2 = ExtResource("99_gjdjo")
+treeScene1 = ExtResource("100_f1p44")
+treeScene2 = ExtResource("101_jyfli")
+treeScene3 = ExtResource("102_oifby")
+Mob1 = ExtResource("44_sgt4t")
+Mob2 = ExtResource("59_iruq2")
+Mob3 = ExtResource("60_787lv")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_scale = 202.794

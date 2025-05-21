@@ -1,23 +1,14 @@
-[gd_scene load_steps=28 format=3 uid="uid://cs80yhw0r71d5"]
+[gd_scene load_steps=18 format=3 uid="uid://cs80yhw0r71d5"]
 
 [ext_resource type="Script" uid="uid://dhirr41vmmip7" path="res://Map/Spring/floor_gen.cs" id="1_b03uh"]
-[ext_resource type="PackedScene" uid="uid://b8r2a0hk4l5e2" path="res://Map/Autumn/border_top.tscn" id="2_1kolw"]
-[ext_resource type="PackedScene" uid="uid://baab1sla66y71" path="res://Map/Autumn/top_left.tscn" id="2_b8msm"]
+[ext_resource type="PackedScene" uid="uid://cpxefvkulc4or" path="res://Map/Autumn/Floor.tscn" id="2_1kolw"]
 [ext_resource type="Script" uid="uid://c86o7rkgi04a5" path="res://Map/Spring/map_gen.cs" id="2_isu2b"]
 [ext_resource type="PackedScene" uid="uid://dcibugxbkoir2" path="res://Map/Autumn/mushroom_autumn.tscn" id="3_7ur2x"]
-[ext_resource type="PackedScene" uid="uid://bh3bp4fv8gh5p" path="res://Map/Autumn/border_left.tscn" id="3_dexlx"]
-[ext_resource type="PackedScene" uid="uid://o0fadk52npol" path="res://Map/Autumn/top_right.tscn" id="4_6rhu7"]
-[ext_resource type="PackedScene" uid="uid://cqd7d5dll6oqd" path="res://Map/Autumn/down_left.tscn" id="4_62elp"]
 [ext_resource type="PackedScene" uid="uid://qpakevld4ufa" path="res://Map/Autumn/Leaves1_autumn.tscn" id="4_wfmm0"]
-[ext_resource type="PackedScene" uid="uid://dmardsm74eej2" path="res://Map/Autumn/border_down.tscn" id="5_b8msm"]
 [ext_resource type="PackedScene" uid="uid://clqk2y2jvhukr" path="res://Map/Autumn/Leaves2_autumn.tscn" id="5_wfmm0"]
-[ext_resource type="PackedScene" uid="uid://bt1dql8na60gh" path="res://Map/Autumn/down_right.tscn" id="6_6rhu7"]
-[ext_resource type="PackedScene" uid="uid://vwdhuhx71rm2" path="res://Map/Autumn/border_right.tscn" id="6_gp1ue"]
-[ext_resource type="PackedScene" uid="uid://otg8mn87e0ih" path="res://Map/Autumn/floor1.tscn" id="7_gp1ue"]
-[ext_resource type="PackedScene" uid="uid://bsdx5vjbjyj4r" path="res://Map/Autumn/floor2.tscn" id="8_2kds6"]
-[ext_resource type="PackedScene" uid="uid://coqr75ncotgca" path="res://Map/Autumn/floor3.tscn" id="9_rql0y"]
-[ext_resource type="PackedScene" uid="uid://rss1pb02231p" path="res://Map/Autumn/floor4.tscn" id="10_3fsen"]
-[ext_resource type="PackedScene" uid="uid://cba7voe0vklnt" path="res://Map/Autumn/foor5.tscn" id="11_32djf"]
+[ext_resource type="PackedScene" uid="uid://csi8lqt56oe2x" path="res://Mobs/Orc/Orc2.tscn" id="15_62elp"]
+[ext_resource type="PackedScene" uid="uid://b36e55wisopis" path="res://Mobs/Slime/Slime2.tscn" id="16_b8msm"]
+[ext_resource type="PackedScene" uid="uid://c2y6od6fwmxgo" path="res://Mobs/Vampires/Vampires2.tscn" id="17_6rhu7"]
 [ext_resource type="PackedScene" uid="uid://cuo2uytmnvoai" path="res://Map/Autumn/Rock1.tscn" id="19_2kds6"]
 [ext_resource type="PackedScene" uid="uid://pv7g48x12o11" path="res://Map/Autumn/Rock2.tscn" id="20_rql0y"]
 [ext_resource type="PackedScene" uid="uid://c3200nxahc4dv" path="res://Map/Autumn/Rock3.tscn" id="21_3fsen"]
@@ -26,27 +17,16 @@
 [ext_resource type="PackedScene" uid="uid://c085qpdlpwide" path="res://Map/Autumn/Tree1.tscn" id="24_4ygxx"]
 [ext_resource type="PackedScene" uid="uid://dli67bgw1ikx5" path="res://Map/Autumn/Tree2.tscn" id="25_tr5r3"]
 [ext_resource type="PackedScene" uid="uid://iad2uacph15i" path="res://Map/Autumn/Tree3.tscn" id="26_13nn3"]
-[ext_resource type="PackedScene" uid="uid://cln0pr6e762p" path="res://Mobs/Orc/Orc1.tscn" id="27_emcyj"]
 
 [node name="Autumn" type="Node2D"]
 
-[node name="Floor" type="Node2D" parent="."]
+[node name="Floor_Autumn" type="Node2D" parent="."]
+z_index = -1
 script = ExtResource("1_b03uh")
-topLeftScene = ExtResource("2_b8msm")
-topScene = ExtResource("2_1kolw")
-topRightScene = ExtResource("4_6rhu7")
-leftScene = ExtResource("3_dexlx")
-rightScene = ExtResource("6_gp1ue")
-downLeftScene = ExtResource("4_62elp")
-downScene = ExtResource("5_b8msm")
-downRightScene = ExtResource("6_6rhu7")
-floorScene = ExtResource("7_gp1ue")
-floor2Scence = ExtResource("8_2kds6")
-floor3Scence = ExtResource("9_rql0y")
-floor4Scene = ExtResource("10_3fsen")
-floor5Scene = ExtResource("11_32djf")
+floor = ExtResource("2_1kolw")
 
-[node name="Objects" type="Node2D" parent="."]
+[node name="Objects_Autumn" type="Node2D" parent="."]
+y_sort_enabled = true
 script = ExtResource("2_isu2b")
 mushroomScene = ExtResource("3_7ur2x")
 leavesScene1 = ExtResource("4_wfmm0")
@@ -59,6 +39,6 @@ Ores2 = ExtResource("23_32djf")
 treeScene1 = ExtResource("24_4ygxx")
 treeScene2 = ExtResource("25_tr5r3")
 treeScene3 = ExtResource("26_13nn3")
-Mob1 = ExtResource("27_emcyj")
-Mob2 = ExtResource("27_emcyj")
-Mob3 = ExtResource("27_emcyj")
+Mob1 = ExtResource("15_62elp")
+Mob2 = ExtResource("16_b8msm")
+Mob3 = ExtResource("17_6rhu7")

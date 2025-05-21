@@ -18,9 +18,11 @@ public partial class Orc : CharacterBody2D
     private bool _isPatrolling = false; // variable pour indiquer si l'ennemi est entrain de patrouiller
     private Vector2 _patrolDirection = Vector2.Right;
 
+    private int notvisible = 1500;
+
     public override void _Ready()
     {
-        _target = GetNodeOrNull<Player>("/root/GameSolo/Player");// permet de trouver le Player dans la scène
+        _target = GetNodeOrNull<Player>("/root/GameSolo/Node2D/Player");// permet de trouver le Player dans la scène
         
         //Timer
         _attackCooldownTimer = new Timer();
@@ -41,6 +43,10 @@ public partial class Orc : CharacterBody2D
         float distanceY = Mathf.Abs(targetPosition.Y - GlobalPosition.Y);
 
         // si le joueur n'est pas dans le zone alors on lance la fonction pour patrouiller
+        if (distanceX > notvisible || distanceY > notvisible)
+        {
+            return;
+        }
         if (distanceX > _detectionRange || distanceY > _detectionRange)
         {
             Patrol(delta);

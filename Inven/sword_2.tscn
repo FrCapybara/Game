@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0o4ss8h57aq0"]
+
+[ext_resource type="Texture2D" uid="uid://c05tevri2wp85" path="res://Inven/Sword.png" id="1_ecxpg"]
+
+[sub_resource type="Resource" id="Resource_mdrt3"]
+metadata/__load_path__ = "res://Inven/Sword2.cs"
+
+[node name="Sword2" type="Node2D"]
+script = SubResource("Resource_mdrt3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -21.0
+offset_top = -24.0
+offset_right = 55.0
+offset_bottom = 55.0
+texture = ExtResource("1_ecxpg")
+expand_mode = 1

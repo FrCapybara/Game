@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0ndbo1errsx6"]
+
+[ext_resource type="Texture2D" uid="uid://bbbdcma20yp6a" path="res://Map/Winter/winter.png" id="1_q6t14"]
+
+[node name="Floor" type="Sprite2D"]
+texture = ExtResource("1_q6t14")
+centered = false

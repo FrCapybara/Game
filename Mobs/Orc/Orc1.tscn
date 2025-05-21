@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://jfmeuduif3va" path="res://Mobs/Orc_Assets/PNG/orc1_walk_full.png" id="3_lwrkd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_72v8c"]
-size = Vector2(34, 58)
+size = Vector2(17, 7.75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mbpjx"]
 atlas = ExtResource("2_ftw6e")
@@ -203,10 +203,11 @@ script = ExtResource("1_1ujne")
 _sprite = NodePath("AnimatedSprite2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, -9)
+position = Vector2(0, -5.125)
 shape = SubResource("RectangleShape2D_72v8c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6ng35")
 animation = &"walk_right"
+offset = Vector2(0, -10)

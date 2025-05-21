@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bmhpn0b65q88q" path="res://Mobs/Orc_Assets/PNG/orc3_walk_full.png" id="2_wdgux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qxcmj"]
-size = Vector2(45, 70)
+size = Vector2(17, 7)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x17ys"]
 atlas = ExtResource("1_bqp15")
@@ -200,13 +200,12 @@ animations = [{
 
 [node name="Orc3" type="CharacterBody2D" node_paths=PackedStringArray("_sprite")]
 script = ExtResource("1_rimx2")
-_speed = 300
+_speed = 280
 _sprite = NodePath("AnimatedSprite2D")
-_detectionRange = 700
 _patrolDistance = 200
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, -15)
+position = Vector2(-1, -4)
 shape = SubResource("RectangleShape2D_qxcmj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -215,3 +214,4 @@ sprite_frames = SubResource("SpriteFrames_epp0c")
 animation = &"walk_right"
 frame = 2
 frame_progress = 0.509967
+offset = Vector2(0, -10)

@@ -129,16 +129,19 @@ _sprite = NodePath("AnimatedSprite2D")
 _camera = NodePath("Camera2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 35.5)
+position = Vector2(1, -6)
 shape = SubResource("RectangleShape2D_f1npv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -16)
+position = Vector2(0, -1)
 scale = Vector2(1.805, 1.9)
 sprite_frames = SubResource("SpriteFrames_h6u0s")
 animation = &"walk_right"
+centered = false
+offset = Vector2(-32, -61.5)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("ObjectToFollow")]
+y_sort_enabled = true
 position_smoothing_enabled = true
 script = ExtResource("3_o3ov8")
 ObjectToFollow = NodePath("../AnimatedSprite2D")

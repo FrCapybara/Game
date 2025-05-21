@@ -19,63 +19,64 @@ public partial class map_gen : Node2D
     [Export] private PackedScene Mob2; // Scène de l'ennemi
     [Export] private PackedScene Mob3; // Scène de l'ennemi
 
-    private int mapWidth = 9984;  // On definit la largeur 
-    private int mapHeight = 9984; // on definit la hauteur 
+    private int mapWidth = 3328;  // On definit la largeur 
+    private int mapHeight = 3328; // on definit la hauteur 
     
 
-    private int leavesMin = 50, leavesMax = 100;   // Quantite min et max de feuilles
-    private int rockMin = 33, rockMax = 67;   // Quantite min et max de cailloux
-    private int treeMin = 33, treeMax = 67;   // Quantite min et max arbre
-    private int mushroomMin = 80, mushroomMax = 160;
-    private int ironMin= 20, ironMax = 50;   // Quantite min et max de fer
+    private int leavesMin = 40, leavesMax = 60;   // Quantite min et max de feuilles
+    private int rockMin = 15, rockMax = 40;   // Quantite min et max de cailloux
+    private int treeMin = 15, treeMax = 40;   // Quantite min et max arbre
+    private int mushroomMin = 40, mushroomMax = 60;
+    private int oresMin= 10, oresMax = 20;   // Quantite min et max de fer
     
-    public void GenerateNewMap()
+    
+    public void GenerateNewMap(int x, int y)
     {
-        GenerateMap();
+        GenerateMap(x, y);
     }
     
-    private void GenerateEnemies(PackedScene ennemy)
+    
+    
+    private void GenerateEnemies(PackedScene ennemy, int x, int y)
     {
         Random random = new Random();
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 5; i++)
         {
             Node2D enemyInstance = (Node2D)ennemy.Instantiate();
-            Vector2 position = new Vector2(random.Next(0, mapWidth), random.Next(0, mapHeight));
+            Vector2 position = new Vector2(random.Next(x, x + mapWidth - 100), random.Next(y, y + mapHeight - 100));
             enemyInstance.Position = position;
             AddChild(enemyInstance);
         }
     }
 
-    private void GenerateMap()
+    private void GenerateMap(int x, int y)
     { 
-        GenerateEnemies(Mob1);
-        GenerateEnemies(Mob2);
-        GenerateEnemies(Mob3);
+        GenerateEnemies(Mob1, x, y);
+        GenerateEnemies(Mob2, x, y);
+        GenerateEnemies(Mob3, x, y);
         
-        GenerateObjects(mushroomScene, mushroomMin, mushroomMax);
+        GenerateObjects(mushroomScene, mushroomMin, mushroomMax, x, y);
         
-        GenerateObjects(leavesScene1, leavesMin, leavesMax);
-        GenerateObjects(leavesScene2, leavesMin, leavesMax);
+        GenerateObjects(leavesScene1, leavesMin, leavesMax, x, y);
+        GenerateObjects(leavesScene2, leavesMin, leavesMax, x, y);
         
-        GenerateObjects(rockScene1, rockMin, rockMax);
-        GenerateObjects(Ores2, ironMin, ironMax);
-        GenerateObjects(rockScene2, rockMin, rockMax);
-        GenerateObjects(rockScene3, rockMin, rockMax);
-        GenerateObjects(Ores1, ironMin, ironMax);
-        GenerateObjects(rockScene3, rockMin, rockMax);
+        GenerateObjects(rockScene1, rockMin, rockMax, x, y);
+        GenerateObjects(Ores2, oresMin, oresMax, x, y);
+        GenerateObjects(rockScene2, rockMin, rockMax, x, y);
+        GenerateObjects(rockScene3, rockMin, rockMax, x, y);
+        GenerateObjects(Ores1, oresMin, oresMax, x, y);
+        GenerateObjects(rockScene3, rockMin, rockMax, x, y);
         
         
-        GenerateObjects(treeScene1, treeMin, treeMax);
-        GenerateObjects(treeScene2, treeMin, treeMax);
-        GenerateObjects(treeScene3, treeMin, treeMax);
+        GenerateObjects(treeScene1, treeMin, treeMax, x, y);
+        GenerateObjects(treeScene2, treeMin, treeMax, x, y);
+        GenerateObjects(treeScene3, treeMin, treeMax, x, y);
     }
 
-    private void GenerateObjects(PackedScene scene, int minCount, int maxCount)
+    private void GenerateObjects(PackedScene scene, int minCount, int maxCount, int x, int y)
     {
         Random random = new Random();
-        
-        List<Rect2> occupiedSpaces = new List<Rect2>(); // liste des espaces occupes
 
         // determine le nombre d'objets a generer
         int objectCount = random.Next(minCount, maxCount);
@@ -84,46 +85,14 @@ public partial class map_gen : Node2D
         {
             Node2D instance = (Node2D)scene.Instantiate();
             
-            //on recupere la sprite dans instane
-            var sprite = instance.GetNode<Sprite2D>("Sprite2D");
-            //on recupere la taille de l'image de l'objet
-            Vector2 spriteSize = sprite.RegionRect.Size * sprite.Scale;
-            //on cree le vecteur pour les positions de chaque objet 
-            Vector2 position;
-
-            // on cherche a generer une position jusqua ce quelle soit valide 
-            do
-            {
-                float x = random.Next((int)(spriteSize.X) , (int)(mapWidth - spriteSize.X * 2));
-                float y = random.Next((int)(spriteSize.Y) , (int)(mapHeight - spriteSize.Y * 2));
-                position = new Vector2(x, y);
-            }
-            while (IsOverlapping(position, spriteSize, occupiedSpaces));
-
+            int a = random.Next(x + 100, x + mapWidth - 100); // position x aleatoire
+            
+            int b = random.Next(y + 100, y + mapHeight - 100); // position y aleatoire
+            
             // placement de l'objet si ok
-            instance.Position = position;
+            instance.Position = new Vector2(a, b);
             AddChild(instance);
 
-            // ajoute l'espace occupé par l'objet dans la liste
-            occupiedSpaces.Add(new Rect2(position - spriteSize, spriteSize * 2));
         }
-    }
-
-    private bool IsOverlapping(Vector2 position, Vector2 size, List<Rect2> occupiedSpaces)
-    {
-        // cree un Rect2 pour le nouvel objet
-        Rect2 newRect = new Rect2(position - size, size * 2);
-
-        foreach (var rect in occupiedSpaces)
-        {
-            // verifie si les deux rectangles se chevauchent
-            if (newRect.Intersects(rect))
-            {
-                return true; // chevauchement 
-            }
-        }
-
-        // pas de chevauchement
-        return false;
     }
 }

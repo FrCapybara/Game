@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpxefvkulc4or"]
+
+[ext_resource type="Texture2D" uid="uid://dodolqqckqf0n" path="res://Map/Autumn/Autumn.png" id="1_lbiix"]
+
+[node name="Floor" type="Sprite2D"]
+texture = ExtResource("1_lbiix")
+centered = false

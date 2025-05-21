@@ -11,11 +11,12 @@ size = Vector2(28.5, 11.5)
 position = Vector2(0, -0.5)
 scale = Vector2(1, 1.01042)
 texture = ExtResource("1_4essi")
+offset = Vector2(0, -16)
 region_enabled = true
 region_rect = Rect2(293, 68, 38, 39)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1.75, 10)
+position = Vector2(1, -5)
 shape = SubResource("RectangleShape2D_ans8p")

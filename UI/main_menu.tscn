@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dqgs7njkmsa6x"]
 
-[ext_resource type="Script" path="res://UI/MainMenu.cs" id="1_5hrya"]
+[ext_resource type="Script" uid="uid://dmyyirwemejt4" path="res://UI/MainMenu.cs" id="1_5hrya"]
 [ext_resource type="Texture2D" uid="uid://f42m31e3ir3b" path="res://UI/Screen_main_menu.png" id="1_wmvgk"]
 [ext_resource type="Texture2D" uid="uid://dr8t6m63vgvjc" path="res://UI/Title.png" id="2_waw2n"]
 
